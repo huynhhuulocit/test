@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        direction: rtl;
+        font-family: tahoma;
+      }
+      input {
+        min-width: 25em;
+      }
+      input:-moz-read-only {
+        background: cyan;
+      }
+      input:read-only {
+        background: cyan;
+      }
+      p:-moz-read-only {
+        background: lightgray;
+      }
+      p:read-only {
+        background: lightgray;
+      }
+      p[contenteditable="true"] {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" value="هر چه میخواهید تایپ کنید." />
+    <input type="text" value="این یک فیلد read-only است." readonly />
+    <p>این یک پاراگراف عادی است</p>
+    <p contenteditable="true">شما میتوانید این پاراگراف را ویرایش کنید.</p>
+  </body>
+</html>
